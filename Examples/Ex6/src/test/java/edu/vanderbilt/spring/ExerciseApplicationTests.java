@@ -50,7 +50,9 @@ public class ExerciseApplicationTests {
 	@Test 
 	public void updateVideoCorrectlyUpdatesFields(){
 		Video test = new Video();
+		videoService.addVideo(test);
 		videoService.updateVideo(test.getId(),"Test", 10, "Horror", "testURL");
+		test = videoService.getVideo(test.getId());
 		assertEquals(test.getName(), "Test");
 		assertEquals(test.getSize(), 10);
 		assertEquals(test.getGenre(), "Horror");
@@ -61,6 +63,7 @@ public class ExerciseApplicationTests {
 	@Test
 	public void deleteVideo(){
 		Video test = new Video();
+		videoService.addVideo(test);
 		videoService.deleteVideo(test.getId());
 		Video b = videoService.getVideo(test.getId());
 		assertNull(b);

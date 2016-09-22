@@ -49,6 +49,7 @@ public class VideoService {
 		video.setSize(size);
 		video.setGenre(genre);
 		video.setURL(URL);
+		videos_.save(video);
 	}
 
 	@RequestMapping(value="/video", method=RequestMethod.POST)
