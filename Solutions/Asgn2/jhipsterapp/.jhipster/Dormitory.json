@@ -1,0 +1,18 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "dormName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20160927163302",
+    "entityTableName": "dormitory",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

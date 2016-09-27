@@ -1,0 +1,26 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.8.0",
+    "baseName": "jhipsterapp",
+    "packageName": "org.jhipster.com",
+    "packageFolder": "org/jhipster/com",
+    "serverPort": "8080",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "buildTool": "gradle",
+    "enableSocialSignIn": false,
+    "rememberMeKey": "9eafa7053838d480f916df6acdef34209a5d0cf0",
+    "useSass": false,
+    "applicationType": "monolith",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": false
+  }
+}

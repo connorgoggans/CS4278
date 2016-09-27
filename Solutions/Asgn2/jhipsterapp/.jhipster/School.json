@@ -1,0 +1,18 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "schoolName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20160927163303",
+    "entityTableName": "school",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

@@ -1,0 +1,61 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "contact",
+            "otherEntityName": "preferredContact",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "student"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "dorm",
+            "otherEntityName": "dormitory",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "student"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "school",
+            "otherEntityName": "school",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "student"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "fullName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "emailAddress",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "phoneNumber",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "graduationDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20160927163304",
+    "entityTableName": "student",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

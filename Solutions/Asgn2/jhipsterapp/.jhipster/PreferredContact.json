@@ -1,0 +1,18 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "nameOfChoice",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20160927163301",
+    "entityTableName": "preferred_contact",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}
