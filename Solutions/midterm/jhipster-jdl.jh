@@ -1,0 +1,42 @@
+
+
+
+entity Grade{
+	score Double required
+}
+
+entity Instructor{
+	name String
+    email String
+}
+
+entity Submission{
+	date ZonedDateTime required
+}
+
+entity Student{
+	name String
+    studentID String
+    email String
+}
+
+entity Homework{
+	title String required
+    due ZonedDateTime required
+}
+
+relationship OneToMany{
+	Student{submission} to Submission
+}
+
+relationship ManyToOne{
+	Grade{grader} to Instructor
+}
+
+relationship OneToOne{
+	Grade{grade} to Submission
+}
+
+relationship ManyToOne{
+	Submission{homework(title)} to Homework
+}

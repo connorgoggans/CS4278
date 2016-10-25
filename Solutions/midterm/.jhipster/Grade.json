@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "grade",
+            "otherEntityName": "submission",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "grade"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "grader",
+            "otherEntityName": "instructor",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "score",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20161020162250",
+    "entityTableName": "grade",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}
